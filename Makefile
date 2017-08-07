@@ -7,8 +7,21 @@ all:
 	@echo "========================================"
 	@echo "========================================"
 
-build: pull
-	npm run build
+pull:
+	git pull
+
+readme:
+	cp -f -a README.md ./dist
+
+push:
 	git add .
 	git commit -m 'update'
 	git push
+	make readme
+
+
+
+build: pull
+	npm run build
+	make readme
+	make push
