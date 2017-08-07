@@ -1,4 +1,4 @@
-[![Version](http://img.shields.io/npm/v/vue-player.svg)](https://www.npmjs.com/package/vue-player)[![Downloads](http://img.shields.io/npm/dm/vue-player.svg)](https://www.npmjs.com/package/vue-player)[![License](https://img.shields.io/npm/l/vue-player.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![Version](http://img.shields.io/npm/v/vue-player.svg)](https://www.npmjs.com/package/vue-player)[![Downloads](http://img.shields.io/npm/dm/vue-player-plugin.svg)](https://www.npmjs.com/package/vue-player-plugin)[![License](https://img.shields.io/npm/l/vue-player.svg?style=flat)](https://opensource.org/licenses/MIT)
 
 # vue-player
 
