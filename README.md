@@ -1,4 +1,4 @@
-[![Version](http://img.shields.io/npm/v/vue-player.svg)](https://www.npmjs.com/package/vue-player)[![Downloads]
+[![Version](http://img.shields.io/npm/v/vue-player.svg)](https://www.npmjs.com/package/vue-player)
 # vue-player
 
 > A Vue2 H5 video player 基于vue2的H5播放器
