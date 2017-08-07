@@ -13,7 +13,7 @@ pull:
 readme:
 	cp -f -a README.md ./dist
 
-push:
+push: readme
 	git add .
 	git commit -m 'update'
 	git push
@@ -22,5 +22,4 @@ push:
 
 build: pull
 	npm run build
-	make readme
 	make push
