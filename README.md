@@ -6,7 +6,6 @@
 我希望它功能简单，接近原生播放器，样式是我喜欢的样子。  
 
 ## Getting Start
----
 ### Installation
 
 ``` bash
