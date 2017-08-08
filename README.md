@@ -7,13 +7,13 @@
 
 ## Getting Start
 ---
-###Installation
+### Installation
 
 ``` bash
 npm install vue-player -S
 ```
 
-###Usage
+### Usage
 
 **register VuePlayer globally**
 ``` javascript
@@ -42,7 +42,7 @@ export default {
 </script>
 ```
 
-###simple exmple
+### simple exmple
 
 ``` html
 <template>
