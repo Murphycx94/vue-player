@@ -1,6 +1,7 @@
 <template>
 	<div id="app">
-		<vue-player :src="src"></vue-player>
+		<vue-player :src="src">
+		</vue-player>
 	</div>
 </template>
 

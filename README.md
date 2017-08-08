@@ -80,3 +80,14 @@ export default {
 }
 </script>
 ```
+
+**Error notification**
+``` html
+<template>
+	<div>
+		<vue-player :src="src">
+			<h1 slot="err"> Video resource error </h1>  <!-- src = null or error -->
+		</vue-player>
+	</div>
+</template>
+```

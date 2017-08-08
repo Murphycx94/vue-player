@@ -57,8 +57,8 @@
 				</div>
 			</div>
 		</div>
-		<img v-if="src !==null && !playStatus" class="player__logo" @click.self="changePlayStatus" src="./play.png" alt="点击播放">
-		<div v-if="src === null || err " class="player__err">
+		<img v-if="src !==null && !playStatus && !err" class="player__logo" @click.self="changePlayStatus" src="./play.png" alt="点击播放">
+		<div v-if="src || err " class="player__err">
 			<slot name="err">
 				<p class="err">播放源出问题啦  (╯￣Д￣)╯╘═╛</p>
 			</slot>
@@ -242,7 +242,7 @@
 				this.$refs.$video.currentTime = 0
 			},
 			onError (e) {
-				//TODO
+				this.err = true
 			},
 			onTimeupdate () {
 				if (!this.isDragging && this.$refs.$video.buffered.length > 0) {
@@ -522,35 +522,4 @@
 			}
 		}
 	}
-	/* #video::-webkit-media-controls-enclosure {
-		禁用播放器控制栏的样式
-		display: none !important;
-	}
-
-
-	@font-face {
-		font-family: "iconfont";
-		src: url('./font_ckl7nljllpst6gvi.eot?t=1501837971807'), IE9
-		url('./font_ckl7nljllpst6gvi.woff?t=1501837971807') format('woff'), chrome, firefox
-		url('./font_ckl7nljllpst6gvi.ttf?t=1501837971807') format('truetype'), chrome, firefox, opera, Safari, Android, iOS 4.2+
-		url('./font_ckl7nljllpst6gvi.svg?t=1501837971807#iconfont') format('svg'); iOS 4.1-
-	}
-
-	.iconfont {
-		font-family:"iconfont" !important;
-		font-size:16px;
-		font-style:normal;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	.icon-video-play:before { content: "e62f"; }
-
-	.icon-video-next:before { content: "e630"; }
-
-	.icon-video-mute:before { content: "e631"; }
-
-	.icon-video-pause:before { content: "e632"; }
-
-	.icon-video-volume:before { content: "e634"; } */
 </style>
