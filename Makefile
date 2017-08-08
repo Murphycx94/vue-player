@@ -5,7 +5,7 @@ all:
 	@echo "====  pull:    git pull                 ====="
 	@echo "====  readme:  copy readme to dist      ====="
 	@echo "====  push:    readme & push git        ====="
-	@echo "====  build:   pull & build & push git  ====="
+	@echo "====  build:   pull & build             ====="
 	@echo "====                                    ====="
 	@echo "============================================="
 	@echo "============================================="
@@ -25,4 +25,3 @@ push: readme
 
 build: pull
 	npm run build
-	make push
